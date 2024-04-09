@@ -1,15 +1,15 @@
 #ifndef TABLEMODEL_H
 #define TABLEMODEL_H
 
+#include <QAbstractTableModel>
 #include <QObject>
 #include <QWidget>
-#include <QAbstractTableModel>
 
-class tablemodel: public QAbstractTableModel
+class tablemodel : public QAbstractTableModel
 {
     Q_OBJECT
 public:
-    explicit tablemodel(QObject *parent=nullptr);
+    explicit tablemodel(QObject *parent = nullptr);
 
     int rowCount(const QModelIndex &parent = QModelIndex()) const override;
     int columnCount(const QModelIndex &parent = QModelIndex()) const override;

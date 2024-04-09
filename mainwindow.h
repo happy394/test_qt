@@ -21,7 +21,7 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-// awaits interaction
+    // awaits interaction
 private slots:
     void on_pushButton_clicked();
 
@@ -30,6 +30,6 @@ private slots:
 private:
     Ui::MainWindow *ui;
     QStringListModel *list; // model
-    Netflix *filmList; // data
+    Netflix *filmList;      // data
 };
 #endif // MAINWINDOW_H
